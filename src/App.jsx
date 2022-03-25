@@ -4,7 +4,7 @@ import "./static/scss/app.scss";
 import { Spinner } from "react-bootstrap";
 import NavBar from "./components/NavBar";
 import Map from "./pages/map";
-import CreateAlert from "./pages/createAlert";
+import Alerts from "./pages/alerts";
 import About from "./pages/about";
 import Home from "./pages/home";
 
