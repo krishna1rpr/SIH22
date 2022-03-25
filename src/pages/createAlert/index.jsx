@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { useLocation } from "react-router";
 
 function CreateAlert(props) {
     const { title: cityName = "uvhjbnj", message = "yuvjhbn" } = props;
+    const location = useLocation();
 
     const formData = useRef({});
 
@@ -16,6 +18,8 @@ function CreateAlert(props) {
             </Col>
         );
     };
+
+    console.log("yd", location.state);
 
     return (
         <Container className="mt-4">

@@ -7,6 +7,7 @@ import Map from "./pages/map";
 import Alerts from "./pages/alerts";
 import About from "./pages/about";
 import Home from "./pages/home";
+import CreateAlert from "./pages/createAlert";
 
 const App = () => {
     return (
@@ -28,6 +29,9 @@ const App = () => {
                     </Route>
                     <Route exact path="/about">
                         <About />
+                    </Route>
+                    <Route exact path="/alert">
+                        <Alerts />
                     </Route>
                     <Route exact path="/alert/create">
                         <CreateAlert />
