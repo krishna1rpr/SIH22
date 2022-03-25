@@ -30,7 +30,7 @@ const App = () => {
                     <Route exact path="/about">
                         <About />
                     </Route>
-                    <Route exact path="/create-alert">
+                    <Route exact path="/alert/create">
                         <CreateAlert />
                     </Route>
                 </Switch>
