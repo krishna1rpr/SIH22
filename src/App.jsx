@@ -16,9 +16,10 @@ const App = () => {
           </Spinner>
         }
       >
-        <Hero />
         <Switch>
-          <Route path="/"></Route>
+          <Route exact path="/">
+            <Hero />
+          </Route>
         </Switch>
       </Suspense>
     </>
