@@ -9,34 +9,33 @@ import About from "./pages/about";
 import Home from "./pages/home";
 
 const App = () => {
-  return (
-    <>
-      <NavBar />
-      <Suspense
-        fallback={
-          <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
-        }
-      >
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/map">
-            <Map />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/alert">
-            <Alerts />
-          </Route>
-          <Route exact path="/alert/create"></Route>
-        </Switch>
-      </Suspense>
-    </>
-  );
+    return (
+        <>
+            <NavBar />
+            <Suspense
+                fallback={
+                    <Spinner animation="border" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                    </Spinner>
+                }
+            >
+                <Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route exact path="/map">
+                        <Map />
+                    </Route>
+                    <Route exact path="/about">
+                        <About />
+                    </Route>
+                    <Route exact path="/alert/create">
+                        <CreateAlert />
+                    </Route>
+                </Switch>
+            </Suspense>
+        </>
+    );
 };
 
 export default App;
