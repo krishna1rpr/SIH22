@@ -4,6 +4,9 @@ import "./static/scss/app.scss";
 import { Spinner } from "react-bootstrap";
 import NavBar from "./components/NavBar";
 import Map from "./pages/map";
+import CreateAlert from "./pages/createAlert";
+import About from "./pages/about";
+import Home from "./pages/home";
 const Hero = lazy(() => import("./components/Hero"));
 
 const App = () => {
@@ -19,10 +22,16 @@ const App = () => {
             >
                 <Switch>
                     <Route exact path="/">
-                        <Hero />
+                        <Home />
                     </Route>
                     <Route exact path="/map">
                         <Map />
+                    </Route>
+                    <Route exact path="/about">
+                        <About />
+                    </Route>
+                    <Route exact path="/create-alert">
+                        <CreateAlert />
                     </Route>
                 </Switch>
             </Suspense>
