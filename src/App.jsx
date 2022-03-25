@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./static/scss/app.scss";
 import { Spinner } from "react-bootstrap";
@@ -7,7 +7,6 @@ import Map from "./pages/map";
 import CreateAlert from "./pages/createAlert";
 import About from "./pages/about";
 import Home from "./pages/home";
-const Hero = lazy(() => import("./components/Hero"));
 
 const App = () => {
     return (
