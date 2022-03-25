@@ -4,7 +4,7 @@ import "./static/scss/app.scss";
 import { Spinner } from "react-bootstrap";
 import NavBar from "./components/NavBar";
 import Map from "./pages/map";
-import CreateAlert from "./pages/createAlert";
+import Alerts from "./pages/alerts";
 import About from "./pages/about";
 import Home from "./pages/home";
 
@@ -29,9 +29,10 @@ const App = () => {
           <Route exact path="/about">
             <About />
           </Route>
-          <Route exact path="/create-alert">
-            <CreateAlert />
+          <Route exact path="/alert">
+            <Alerts />
           </Route>
+          <Route exact path="/alert/create"></Route>
         </Switch>
       </Suspense>
     </>
